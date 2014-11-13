@@ -10,10 +10,24 @@ android {
         targetSdkVersion 20
     }
 
+
+
+    signingConfigs {
+        release {
+            storeFile file("/apps/dftjenkins/my-release-key.keystore")
+            storePassword "bharat"
+            keyAlias "alias_name"
+            keyPassword "jenkins"
+        }
+    }
+
     buildTypes {
         release {
             runProguard false
             proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.txt'
+        }
+        release {
+            signingConfig signingConfigs.release
         }
     }
     lintOptions {
