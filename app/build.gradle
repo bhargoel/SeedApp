@@ -1,5 +1,5 @@
 apply plugin: 'com.android.application'
-apply plugin: "com.jfrog.artifactory"
+//apply plugin: "com.jfrog.artifactory"
 
 //group = 'it.cits.dft.cddservice.4.3'
 //version = '1.0'
