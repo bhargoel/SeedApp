@@ -1,14 +1,21 @@
 apply plugin: 'com.android.application'
+apply plugin: "com.jfrog.artifactory"
+
+//group = 'it.cits.dft.cddservice.4.3'
+//version = '1.0'
+
 
 android {
     compileSdkVersion 19
-    buildToolsVersion "20.0.0"
+    buildToolsVersion "19.1.0"
 
     defaultConfig {
         applicationId "com.cisco.dft.seed"
         minSdkVersion 15
         targetSdkVersion 20
     }
+
+
 
 
 
