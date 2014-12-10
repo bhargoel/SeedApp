@@ -2,7 +2,7 @@ apply plugin: 'com.android.application'
 
 group = 'it.cits.itarchitecture.cdddemo.cddashboard'
 archivesBaseName='my-app'
-version= '1.4.9'
+version= '1.4.8'
 
 def apkPath = 'build/outputs/apk'
 def f1 = file("$apkPath/my-app-release.apk")
