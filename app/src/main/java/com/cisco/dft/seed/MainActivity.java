@@ -41,6 +41,7 @@ public class MainActivity extends TabActivity implements OnTabChangeListener,
 	@Override
 	public void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
+		System.out.println("hello");
 		setContentView(R.layout.activity_demo);
 		mUserProfile = (TextView) findViewById(R.id.tvinfo);
 
