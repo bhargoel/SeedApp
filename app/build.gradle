@@ -6,10 +6,10 @@ apply plugin: 'com.android.application'
 
 group = 'it.cits.itarchitecture.cdddemo.cddashboard'
 archivesBaseName='my-app'
-version= '1.4.7'
+//version= '1.4.7'
 
 def apkPath = 'build/outputs/apk'
-def f1 = file("$apkPath/my-app-release.apk")
+def f1 = file("$apkPath/my-app-release-1.4.7.apk")
 //def f2 = file("$apkPath/my-app-debug.apk")
 //def f3 = file("$apkPath/my-app-debug-unaligned.apk")
 
