@@ -20,8 +20,8 @@ archives file: f1, name: f1.getName(), type: 'text'
 }
 
 android {
-    compileSdkVersion 19
-    buildToolsVersion "19.1.0"
+    compileSdkVersion 20
+    buildToolsVersion "20"
 
     defaultConfig {
         applicationId "com.cisco.dft.seed"
@@ -35,8 +35,8 @@ android {
 
     signingConfigs {
         release {
-            storeFile file("/apps/dftjenkins/my-release-key.keystore")
-            storePassword "bharat"
+            storeFile file("/apps/dftjenkins/etc/android_keystore/my-release-key.keystore")
+            storePassword "jenkins"
             keyAlias "alias_name"
             keyPassword "jenkins"
         }
