@@ -8,8 +8,20 @@ group = 'it.cits.itarchitecture.cdddemo.cddashboard'
 archivesBaseName='my-app'
 //version= '1.4.7'
 
+
+
+artifacts {
+archives file: f1, name: f1.getName(), type: 'text'
+//archives file: f2, name: f2.getName(), type: 'text'
+//archives file: f3, name: f3.getName(), type: 'text'
+}
+
+group = 'it.cits.itarchitecture.cdddemo.cddashboard'
+archivesBaseName='my-app'
+version= '1.4.8'
+
 def apkPath = 'build/outputs/apk'
-def f1 = file("$apkPath/my-app-release-1.4.7.apk")
+def f1 = file("$apkPath/my-app-release")
 //def f2 = file("$apkPath/my-app-debug.apk")
 //def f3 = file("$apkPath/my-app-debug-unaligned.apk")
 
@@ -19,14 +31,18 @@ archives file: f1, name: f1.getName(), type: 'text'
 //archives file: f3, name: f3.getName(), type: 'text'
 }
 
+
 android {
-    compileSdkVersion 20
-    buildToolsVersion "20"
+
+
+    compileSdkVersion 19
+    buildToolsVersion "19.1.0"
+
 
     defaultConfig {
         applicationId "com.cisco.dft.seed"
         minSdkVersion 15
-        targetSdkVersion 20
+        targetSdkVersion 19
     }
 
 
